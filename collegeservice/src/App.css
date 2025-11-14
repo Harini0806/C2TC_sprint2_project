@@ -1,0 +1,102 @@
+/* LIGHT THEME WITH PROFESSIONAL MULTI-COLOR BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  /* Soft multi-color gradient */
+  background: linear-gradient(
+    135deg,
+    #f7e8ff 0%,    /* very light lavender */
+    #e6f2ff 40%,   /* very soft sky blue */
+    #f9f2ff 100%   /* light pinkish-white */
+  );
+
+  /* Subtle dotted texture layered above gradient */
+  background-image:
+    radial-gradient(#e4e6eb 1px, transparent 1px),
+    linear-gradient(
+      135deg,
+      #f7e8ff 0%,
+      #e6f2ff 40%,
+      #f9f2ff 100%
+    );
+
+  background-size: 20px 20px, cover;
+}
+
+/* Centered layout */
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Title + subtitle */
+.app-title {
+  text-align: center;
+  font-size: 34px;
+  color: #2b3a55;
+  margin-bottom: 5px;
+}
+
+.app-subtitle {
+  text-align: center;
+  color: #6c7a92;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* Card container for form + list */
+.section-card {
+  background: #ffffff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.06);
+  transition: all .2s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 26px rgba(0,0,0,0.10);
+}
+
+/* Extra styling for input fields (optional but professional) */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #c7ccd6;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #6a5acd;
+  box-shadow: 0px 0px 6px rgba(106, 90, 205, 0.3);
+  outline: none;
+}
+
+/* Professional button styling */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3a6ff7;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2958d4;
+}
